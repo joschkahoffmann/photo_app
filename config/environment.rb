@@ -4,8 +4,8 @@ require_relative 'application'
 # Initialize the Rails application.
 Rails.application.initialize!
 ActionMailer::Base.smtp_settings = {
-  :user_name => ENV["HEROKU_USERNAME"],
-  :password => ENV["HEROKU_PASSWORD"],
+  :user_name => ENV["SEDNGRID_USERNAME"],
+  :password => ENV["SENDGRID_PASSWORD"],
   :domain => 'heroku.com',
   :address => 'smtp.sendgrid.net',
   :port => 587,
